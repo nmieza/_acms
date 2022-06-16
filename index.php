@@ -184,7 +184,7 @@ body {
     <div class="login-box">
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
-        <a href="warehouse_login.php" target="_self"><span></span><span></span><span></span><span></span>WAREHOUSE</a>
+        <a href="wh_login.php" target="_self"><span></span><span></span><span></span><span></span>WAREHOUSE</a>
         <a href="airport_login.php" target="_self"><span></span><span></span><span></span><span></span>AIRPORT</a>
     </form>
     </div>
