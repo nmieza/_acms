@@ -201,8 +201,7 @@ session_start();
   <span></span>
   <span></span>
 
-  <a href="studentpage.php" class="menu-logo">
-    <img src="logo.png"  alt="My Awesome Website"/>
+
   </a>
   <div class="menu">
     <ul>
