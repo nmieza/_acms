@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 		$sql = "SELECT * FROM warehouse WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO users (username, email, password)
+			$sql = "INSERT INTO warehouse (username, email, password)
 					VALUES ('$username', '$email', '$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
