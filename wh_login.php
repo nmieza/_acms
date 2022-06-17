@@ -52,7 +52,8 @@ if (isset($_POST['submit'])) {
 			<div class="input-group">
 				<button name="submit" class="btn">Warehouse | Login</button>
 			</div>
-			<p class="login-register-text">Don't have an account? <a href="wh_register.php">Register Here</a>.</p>
+			<p class="login-register-text">Don't have an account? 
+				<a href="wh_register.php" target="_self"><span></span><span></span><span></span><span></span>Register Here</a>.</p>
 		</form>
 	</div>
 </body>
