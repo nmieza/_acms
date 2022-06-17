@@ -189,7 +189,7 @@ session_start();
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
         <a href="wh_login.php" target="_self"><span></span><span></span><span></span><span></span>WAREHOUSE</a>
-        <a href="airport_login.php" target="_self"><span></span><span></span><span></span><span></span>AIRPORT</a>
+        <a href="ap_login.php" target="_self"><span></span><span></span><span></span><span></span>AIRPORT</a>
     </form>
     </div>
 </body>
