@@ -3,6 +3,6 @@
 session_start();
 session_destroy();
 
-header("Location: wh_login.php");
+header("Location: index.php");
 
 ?>
