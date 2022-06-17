@@ -7,7 +7,7 @@ session_start();
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-    header("Location: welcome.php");
+    header("Location: dh_index.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: welcome.php");
+		header("Location: dh_index.php");
 	} else {
 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
 	}
@@ -50,9 +50,9 @@ if (isset($_POST['submit'])) {
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
 			</div>
 			<div class="input-group">
-				<button name="submit" class="btn">Warehouse | Login</button>
+				<button name="submit" class="btn" >Warehouse | Login</button>
 			</div>
-			<p class="login-register-text">Don't have an account?<a href="wh_register.php">Register Here</a>.</p>
+			<p class="login-register-text">Don't have an account? <a href="wh_register.php">Register Here</a>.</p>
 		</form>
 	</div>
 </body>
