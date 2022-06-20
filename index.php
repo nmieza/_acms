@@ -19,7 +19,6 @@ session_start();
  body {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(ap.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -187,6 +186,7 @@ session_start();
     </head>
 <body>
     <div class="login-box">
+        <?php include 'log.php'; ?>
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
         <a href="wh_login.php" target="_self"><span></span><span></span><span></span><span></span>WAREHOUSE</a>
