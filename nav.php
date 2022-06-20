@@ -18,9 +18,6 @@ session_start();
 }
  body {
     margin: 0;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(ap.jpg);
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
