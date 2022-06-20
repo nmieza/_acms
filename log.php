@@ -54,7 +54,7 @@ session_start();
 <body>
 
 <div class="topnav">
-    
+  <?php include 'login_nav.php'; ?>
   <a class="active" href="#home">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
