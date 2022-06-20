@@ -11,7 +11,7 @@ session_start();
     <title>AIR CARGO MANAGEMENT SYSTEM</title>
     <body class="hold-transition login-page">
     <style>
-        
+
 	html {
   height: 100%;
 }
@@ -182,7 +182,7 @@ body {
 	</style>
 	</head>
 <body>
-<?php include 'log_.php'; ?>
+<?php include 'log.php'; ?>
     <div class="login-box">
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
