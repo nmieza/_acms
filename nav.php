@@ -17,8 +17,7 @@ session_start();
     height: 100%;
 }
  body {
-    width: 100%;
-    min-height: 100vh;
+    margin: 0;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(ap.jpg);
     background-position: center;
     background-size: cover;
