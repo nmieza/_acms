@@ -21,7 +21,6 @@ session_start();
     min-height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(ap.jpg);
     background-position: center;
-    background-size: cover;
     display: flex;
 
 }
