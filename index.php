@@ -23,8 +23,7 @@ session_start();
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .login-box {
