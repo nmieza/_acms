@@ -18,7 +18,6 @@ session_start();
 body {
   margin:0;
   padding:0;
-  font-family: sans-serif;
   background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(ap.jpg); 
   align-items: center;
 }
