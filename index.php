@@ -186,6 +186,9 @@ session_start();
     </head>
 <body>
     <?php include 'log_.php'; ?>
+    <div class="col-8">
+            <a href="http://localhost/acms/">Go to Website</a>
+    </div>
     <div class="login-box">
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
