@@ -13,8 +13,9 @@ session_start();
     <body class="hold-transition login-page">
     <style>
 
-    html{
-    height: 100%;
+html
+{
+
 }
  body {
     width: 100%;
