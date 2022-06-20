@@ -184,8 +184,8 @@ session_start();
     </style>
     </head>
 <body>
+    <?php include 'log.php'; ?>
     <div class="login-box">
-        <?php include 'log.php'; ?>
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
         <a href="wh_login.php" target="_self"><span></span><span></span><span></span><span></span>WAREHOUSE</a>
