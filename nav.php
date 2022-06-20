@@ -1,11 +1,31 @@
+<?php
+error_reporting(0);
+session_start();
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR CARGO MANAGEMENT SYSTEM</title>
+    <body class="hold-transition login-page">
+    <style>
+
+    html{
+    height: 100%;
+}
+ body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(ap.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .topnav {
@@ -31,6 +51,7 @@ body {
   background-color: #04AA6D;
   color: white;
 }
+
 </style>
 </head>
 <body>
@@ -42,10 +63,6 @@ body {
   <a href="#about">About</a>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
-</div>
 
 </body>
 </html>
