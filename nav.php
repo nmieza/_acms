@@ -19,9 +19,6 @@ session_start();
  body {
     margin: 0;
     padding:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -54,6 +51,9 @@ session_start();
 <body>
 
 <div class="topnav">
+    <span></span>
+  <span></span>
+  <span></span>
   <a class="active" href="#home">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
