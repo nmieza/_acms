@@ -186,7 +186,7 @@ session_start();
     </style>
     </head>
 <body>
-    <?php include 'home_topnav.php'; ?>
+    <?php include 'nav.php'; ?>
     <div class="login-box">
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
