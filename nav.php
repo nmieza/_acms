@@ -23,6 +23,9 @@ session_start();
 }
 
 .topnav {
+    position: relative;
+  display: flex;
+  align-items: center;
   overflow: hidden;
   background-color: #333;
 }
@@ -51,9 +54,7 @@ session_start();
 <body>
 
 <div class="topnav">
-    <span></span>
-  <span></span>
-  <span></span>
+    
   <a class="active" href="#home">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
