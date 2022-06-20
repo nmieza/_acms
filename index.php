@@ -192,5 +192,21 @@ session_start();
         <a href="ap_login.php" target="_self"><span></span><span></span><span></span><span></span>AIRPORT</a>
     </form>
     </div>
+
+<div class="menu">
+  <ul>
+    <li>
+      <a>
+        WELCOME TO ASSIGNMENT SUBMISSION SYSTEM
+      </a>
+    </li>
+  </ul>
+  
+</div>
+</nav>
+<div class="footer">
+<p>© COPYRIGHT UNIVERSITI TEKNOLOGI MARA 2022 CAWANGAN TERENGGANU - KAMPUS KUALA TERENGGANU</p>
+</div>    
+
 </body>
 </html>
