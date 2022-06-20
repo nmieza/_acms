@@ -23,7 +23,7 @@ body {
     min-height: 400px;
     background: #FFF;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    box-shadow: 0 0 5px rgba(0,0,0,.6);
     padding: 40px 30px;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
-    border-color: #a29bfe;
+    border-color: #03e9f4;
 }
 
 .container .login-email .input-group .btn {
@@ -119,7 +119,7 @@ body {
     padding: 15px 20px;
     text-align: center;
     border: none;
-    background: #a29bfe;
+    background: #03e9f4;
     outline: none;
     border-radius: 30px;
     font-size: 1.2rem;
