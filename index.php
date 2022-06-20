@@ -194,13 +194,6 @@ session_start();
         <a href="ap_login.php" target="_self"><span></span><span></span><span></span><span></span>AIRPORT</a>
     </form>
     </div>
-    
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div>
 
 </body>
 </html>
