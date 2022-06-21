@@ -89,7 +89,7 @@
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
-        <span class="welcome.php">warehouse</span>
+        <span class="admin_name">warehouse</span>
         <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
