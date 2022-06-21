@@ -24,13 +24,13 @@
         <li>
           <a href="#">
             <i class='bx bx-box' ></i>
-            <span class="links_name">Product</span>
+            <span class="links_name">Add New Shipment</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Order list</span>
+            <span class="links_name">Shipment list</span>
           </a>
         </li>
         <li>
