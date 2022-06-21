@@ -98,7 +98,7 @@
       <div class="overview-boxes">
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Order</div>
+            <div class="box-topic">Total Shipment</div>
             <div class="number">40,876</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
@@ -109,7 +109,7 @@
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Sales</div>
+            <div class="box-topic">Pending Shipment</div>
             <div class="number">38,876</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
@@ -120,8 +120,8 @@
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Profit</div>
-            <div class="number">$12,876</div>
+            <div class="box-topic">In-Transit Shipment</div>
+            <div class="number">12,876</div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -131,7 +131,7 @@
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Return</div>
+            <div class="box-topic">Arrived at station</div>
             <div class="number">11,086</div>
             <div class="indicator">
               <i class='bx bx-down-arrow-alt down'></i>
@@ -144,7 +144,7 @@
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recent Sales</div>
+          <div class="title">Out for Delivery</div>
           <div class="sales-details">
             <ul class="details">
               <li class="topic">Date</li>
@@ -157,7 +157,7 @@
               <li><a href="#">02 Jan 2021</a></li>
             </ul>
             <ul class="details">
-            <li class="topic">Customer</li>
+            <li class="topic">Delivered</li>
             <li><a href="#">Alex Doe</a></li>
             <li><a href="#">David Mart</a></li>
             <li><a href="#">Roe Parter</a></li>
