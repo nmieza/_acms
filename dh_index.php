@@ -169,7 +169,7 @@
              <li><a href="#">Tiana Loths</a></li>
           </ul>
           <ul class="details">
-            <li class="topic">Sales</li>
+            <li class="topic">Status</li>
             <li><a href="#">Delivered</a></li>
             <li><a href="#">Pending</a></li>
             <li><a href="#">Returned</a></li>
@@ -198,7 +198,7 @@
           </div>
         </div>
         <div class="top-sales box">
-          <div class="title">Top Seling Product</div>
+          <div class="title">Delivered</div>
           <ul class="top-sales-details">
             <li>
             <a href="#">
