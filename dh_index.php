@@ -12,7 +12,7 @@
   <div class="sidebar">
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">CodingLab</span>
+      <span class="logo_name">CSC443</span>
     </div>
       <ul class="nav-links">
         <li>
