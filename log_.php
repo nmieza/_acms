@@ -23,7 +23,7 @@ session_start();
 }
 
 .topnav {
-    position: relative;
+    position: absolute;
   display: flex;
   align-items: center;
   overflow: hidden;
