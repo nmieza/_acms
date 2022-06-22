@@ -82,8 +82,8 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="./?p=trace_form">Trace Shipment</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="_trace.php">Trace Shipment</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="./?p=about">About</a></li>
                     </ul>
                 </div>
