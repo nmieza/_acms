@@ -55,7 +55,7 @@ session_start();
 
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="#news">Trace Shipment</a>
+  <a href="_trace.php">Trace Shipment</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
 </div>
