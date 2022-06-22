@@ -41,7 +41,7 @@ session_start();
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: blue;
 }
 
 .topnav a.active {
