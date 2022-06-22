@@ -183,7 +183,7 @@ body {
 	</style>
 	</head>
 <body>
-<?php include '_log.php'; ?>
+<?php include 'log.php'; ?>
     <div class="login-box">
         <h2>AIR CARGO MANAGEMENT SYSTEM<br><br>Log in as?</h2>
         <form>
