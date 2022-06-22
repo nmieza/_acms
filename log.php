@@ -54,7 +54,7 @@ session_start();
 <body>
 <div class="topnav">
   
-  <a href="index.php">AIR CARGO MANAGEMENT SYSTEM</a>
+  <h2><a href="index.php">AIR CARGO MANAGEMENT SYSTEM</a></h2>
   <a class="active" href="index.php">Home</a>
   <a href="_trace.php">Trace Shipment</a>
   <a href="#about">About</a>
