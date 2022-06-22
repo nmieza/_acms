@@ -264,14 +264,6 @@
     }
   })
 </script>
-<!-- Footer-->
-<footer class="py-4 bg-gradient-primary">
-            <div class="container">
-              <p class="m-0 text-center text-white">Copyright © MCW - PHP 2021</p>
-              <p class="m-0 text-center text-white">Developed By: <a href="mailto:oretnom23@gmail.com">oretnom23</a></p>
-          </div>
-        </footer>
-
    
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
