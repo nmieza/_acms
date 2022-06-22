@@ -9,6 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIR CARGO MANAGEMENT SYSTEM</title>
+    <link rel="icon" href="http://localhost/_acms/uploads/logo-1645494239.jpg?v=1645494239">
     <body class="hold-transition login-page">
     <style>
 
