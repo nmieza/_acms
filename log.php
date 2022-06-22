@@ -27,7 +27,9 @@ session_start();
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: #333;
+  background: rgb(0,0,0)!important;
+  background: radial-gradient(circle, rgba(0,0,0,0.48503151260504207) 22%, rgba(0,0,0,0.39539565826330536) 49%, rgba(0,212,255,0) 100%)!important;
+  
 }
 
 .topnav a {
