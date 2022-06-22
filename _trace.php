@@ -88,7 +88,7 @@
                     </ul>
                 </div>
                 <div>
-                  <a href="index.php" class="text-decoration-none text-reset"><b>Admin Panel</b></a>
+                  <a href="index.php" class="text-decoration-none text-reset"><b>Login</b></a>
                 </div>
             </div>
         </nav>
