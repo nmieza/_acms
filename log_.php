@@ -52,7 +52,9 @@ session_start();
 </style>
 </head>
 <body>
-
+<a class="navbar-brand" href="./">
+                <img src="http://localhost/_acms/uploads/logo-1645494239.jpg?v=1645494239" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                AIR CARGO MANAGEMENT SYSTEM                </a>
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
   <a href="_trace.php">Trace Shipment</a>
