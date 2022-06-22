@@ -159,14 +159,6 @@
                                 <img src="http://localhost/_acms/uploads/banner/wallpaper4.jpg" class="d-block w-100  h-100" alt="wallpaper4.jpg">
                             </div>
                                                                                 </div>
-                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                         </div>
                 </div>
             </div>
