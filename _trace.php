@@ -154,6 +154,7 @@
                 </div>
             </div>
             <div class="container px-4 px-lg-5 mt-5">
+            <?php include 'log.php'; ?>
                 <form action="" id="trace-frm">
                     <div class="card card-outline card-primary rounded-0 shadow">
                         <div class="card-body">
