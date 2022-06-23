@@ -56,7 +56,7 @@ session_start();
   
   <a href="index.php">AIR CARGO MANAGEMENT SYSTEM</a>
   <a class="active" href="index.php">Home</a>
-  <a href="_trace.php">Trace Shipment</a>
+  <a href="trace.php">Trace Shipment</a>
   <a href="#about">About</a>
 </div>
 
