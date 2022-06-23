@@ -42,8 +42,7 @@
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-primary navbar-dark ">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
+   
             <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="" role="button"><i class="fas fa-bars"></i></a>
       </li>
@@ -112,7 +111,12 @@
      
   	})
   </script>
-  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 640px;">
+  	 <div class="toast" id="alert_toast" role="alert" aria-live="assertive" aria-atomic="true">
+	    <div class="toast-body text-white">
+	    </div>
+	  </div>
     <div id="toastsContainerTopRight" class="toasts-top-right fixed"></div>
     <!-- Content Header (Page header) -->
     <div class="content-header">
