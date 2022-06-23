@@ -91,26 +91,6 @@
       
     </div>
     
-           <li class="nav-item dropdown">
-            <a href="./index.php?page=track" class="nav-link nav-track active">
-              <i class="nav-icon fas fa-search"></i>
-              <p>
-                Track Parcel
-              </p>
-            </a>
-          </li>  
-           <li class="nav-item dropdown">
-            <a href="./index.php?page=reports" class="nav-link nav-reports">
-              <i class="nav-icon fas fa-file"></i>
-              <p>
-                Reports
-              </p>
-            </a>
-          </li>  
-        </ul>
-      </nav>
-    </div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div>
-  </aside>
   <script>
   	$(document).ready(function(){
       var page = 'track';
