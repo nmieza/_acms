@@ -39,7 +39,6 @@
   <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.min.css">
   
 </head><body class="sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-closed sidebar-collapse" style="height: auto;">
-<div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-primary navbar-dark ">
     <!-- Left navbar links -->
