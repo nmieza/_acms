@@ -61,6 +61,7 @@
   	})
   </script>
     <!-- Content Header (Page header) -->
+    <?php include 'log.php'; ?>
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
