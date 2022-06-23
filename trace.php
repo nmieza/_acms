@@ -2,7 +2,7 @@
 <html lang="en" style="height: auto;"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Track | Courier Management System</title>
+    <title>Track | Air Cargo Management System</title>
   
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
@@ -39,26 +39,7 @@
   <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.min.css">
   
 </head> <body>
-           <li class="nav-item dropdown">
-            <a href="./index.php?page=track" class="nav-link nav-track active">
-              <i class="nav-icon fas fa-search"></i>
-              <p>
-                Track Parcel
-              </p>
-            </a>
-          </li>  
-           <li class="nav-item dropdown">
-            <a href="./index.php?page=reports" class="nav-link nav-reports">
-              <i class="nav-icon fas fa-file"></i>
-              <p>
-                Reports
-              </p>
-            </a>
-          </li>  
-        </ul>
-      </nav>
-    </div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div>
-  </aside>
+          
   <script>
   	$(document).ready(function(){
       var page = 'track';
