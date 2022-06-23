@@ -75,20 +75,7 @@
       </li>
     </ul>
   </nav>
-  <!-- /.navbar -->
-  <script>
-     $('#manage_account').click(function(){
-        uni_modal('Manage Account','manage_user.php?id=1')
-      })
-  </script>
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <div class="dropdown">
-   	<a href="./" class="brand-link">
-                <h3 class="text-center p-0 m-0"><b>ADMIN</b></h3>
-        
-    </a>
-      
-    </div>
+ 
    
   </aside>
   <script>
