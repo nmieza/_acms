@@ -16,14 +16,14 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="trace.php" class="active">
+          <a href="#" class="active">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
         
-          <a href="trace.php">
+          <a href="#">
             <i class='bx bx-box' ></i>
             <span class="links_name">Add New Shipment</span>
           </a>

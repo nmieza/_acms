@@ -71,7 +71,7 @@
 	  </div>
     <div id="toastsContainerTopRight" class="toasts-top-right fixed"></div>
     <!-- Content Header (Page header) -->
-	<?php include 'wp_index.php'; ?>
+	
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
