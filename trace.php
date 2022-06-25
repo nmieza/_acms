@@ -63,6 +63,7 @@
   	})
   </script>
   <!-- Content Wrapper. Contains page content -->
+  <?php include 'wp_index.php'; ?>
   <div class="content-wrapper" style="min-height: 640px;">
   	 <div class="toast" id="alert_toast" role="alert" aria-live="assertive" aria-atomic="true">
 	    <div class="toast-body text-white">
