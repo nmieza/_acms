@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard </title>-->
@@ -8,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
+   <?php echo $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/")+1); ?>
 <body>
   <div class="sidebar">
     <div class="logo-details">
@@ -23,7 +25,7 @@
         </li>
         <li>
         
-          <a href="./wp_index.php?page=trace">
+          <a class= "nav-link <?= $page == 'wp_index.php' ? 'active': '' ?>" href="trace.php">
             <i class='bx bx-box' ></i>
             <span class="links_name">Add New Shipment</span>
           </a>
