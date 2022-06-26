@@ -1,4 +1,4 @@
-<?php if(!isset($conn)){ include 'config.php'; } ?>
+<?php if(!isset($conn)){ include '.php'; } ?>
 <style>
   textarea{
     resize: none;
