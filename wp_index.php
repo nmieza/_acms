@@ -25,7 +25,7 @@
         </li>
         <li>
         
-          <a href="#">
+          <a href="addNewShipment,php">
             <i class='bx bx-box' ></i>
             <span class="links_name">Add New Shipment</span>
           </a>
