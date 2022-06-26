@@ -38,30 +38,11 @@
  <!-- summernote -->
   <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.min.css">
   
-</head><body class="sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-closed sidebar-collapse" style="height: auto;">
+</head><body class="layout-fixed layout-footer-fixed sidebar-closed sidebar-collapse" style="height: auto;">
 <div class="wrapper">
  
   </aside>
-  <script>
-  	$(document).ready(function(){
-      var page = 'track';
-  		var s = '';
-      if(s!='')
-        page = page+'_'+s;
-  		if($('.nav-link.nav-'+page).length > 0){
-             $('.nav-link.nav-'+page).addClass('active')
-  			if($('.nav-link.nav-'+page).hasClass('tree-item') == true){
-            $('.nav-link.nav-'+page).closest('.nav-treeview').siblings('a').addClass('active')
-  				$('.nav-link.nav-'+page).closest('.nav-treeview').parent().addClass('menu-open')
-  			}
-        if($('.nav-link.nav-'+page).hasClass('nav-is-tree') == true){
-          $('.nav-link.nav-'+page).parent().addClass('menu-open')
-        }
 
-  		}
-     
-  	})
-  </script>
   <!-- Content Wrapper. Contains page content -->
   
   <div class="content-wrapper" style="min-height: 640px;">
@@ -71,19 +52,17 @@
 	  </div>
     <div id="toastsContainerTopRight" class="toasts-top-right fixed"></div>
     <!-- Content Header (Page header) -->
-	
+	<?php include 'log.php'; ?>
     <div class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Track</h1>
+            <h1 class="m-0">Track Air Cargo Shipment</h1>
           </div><!-- /.col -->
 
         </div><!-- /.row -->
             <hr class="border-primary">
-      </div><!-- /.container-fluid -->
+      <!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
 
     <!-- Main content -->
     <section class="content">

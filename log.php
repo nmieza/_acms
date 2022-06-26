@@ -27,7 +27,7 @@ session_start();
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(0, 128, 255);
 }
 
 .topnav a {
@@ -45,7 +45,7 @@ session_start();
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #bdedff;
   color: white;
 }
 
@@ -55,9 +55,9 @@ session_start();
 <div class="topnav">
   
   <a href="index.php">AIR CARGO MANAGEMENT SYSTEM</a>
-  <a class="active" href="index.php">Home</a>
+  <a href="index.php">Home</a>
   <a href="trace.php">Trace Shipment</a>
-  <a href="#about">About</a>
+  <a href="about.html">About</a>
 </div>
 
 </body>
