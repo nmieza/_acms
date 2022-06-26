@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-   <?php $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/")+1); ?>
+  
 <body>
   <div class="sidebar">
     <div class="logo-details">
@@ -18,14 +18,14 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="wp_index.php" class="active">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
         
-          <a href="addNewShipment.php">
+          <a class= "nav-link" href="addNewShipment.php">
             <i class='bx bx-box' ></i>
             <span class="links_name">Add New Shipment</span>
           </a>
