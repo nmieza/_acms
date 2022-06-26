@@ -25,7 +25,7 @@
         </li>
         <li>
         
-          <a class= "nav-link <?= $page == 'wp_index.php' ? 'active': '' ?>" href="trace.php">
+          <a href="#">
             <i class='bx bx-box' ></i>
             <span class="links_name">Add New Shipment</span>
           </a>
