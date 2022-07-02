@@ -179,9 +179,9 @@ body {
 	</head>
 
     <body>
-<?php include 'ap_nav.php'; ?>
+<?php include 'wh_nav.php'; ?>
     <div class="login-box">
-        <h2>WELCOME TO AIRPORT</h2>
+        <h2>WELCOME TO WAREHOUSE</h2>
     </div>
 </body>
 </html>
