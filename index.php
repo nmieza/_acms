@@ -181,7 +181,9 @@ body {
   }
 }
 	</style>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="dc77af6c-5ed3-4ca4-abda-a63dbc746872";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 	</head>
+
 <body>
 <?php include 'log.php'; ?>
     <div class="login-box">

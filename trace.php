@@ -1,320 +1,59 @@
-<!DOCTYPE html>
-</html><html lang="en" style="height: auto;"><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Track | Air Cargo Management System</title>
-  
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- DataTables -->
-  <link rel="stylesheet" href="assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-   <!-- Select2 -->
-  <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-   <!-- SweetAlert2 -->
-  <link rel="stylesheet" href="assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
-  <!-- Toastr -->
-  <link rel="stylesheet" href="assets/plugins/toastr/toastr.min.css">
-  <!-- dropzonejs -->
-  <link rel="stylesheet" href="assets/plugins/dropzone/min/dropzone.min.css">
-  <!-- DateTimePicker -->
-  <link rel="stylesheet" href="assets/dist/css/jquery.datetimepicker.min.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- Switch Toggle -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap4-toggle/css/bootstrap4-toggle.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="assets/dist/css/styles.css">
-	<script src="assets/plugins/jquery/jquery.min.js"></script>
-  <!-- jQuery UI 1.11.4 -->
-  <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
- <!-- summernote -->
-  <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.min.css">
-  
-</head><body class="layout-fixed layout-footer-fixed sidebar-closed sidebar-collapse" style="height: auto;">
-<div class="wrapper">
- 
-  </aside>
 
-  <!-- Content Wrapper. Contains page content -->
-  
-  <div class="content-wrapper" style="min-height: 640px;">
-  	 <div class="toast" id="alert_toast" role="alert" aria-live="assertive" aria-atomic="true">
-	    <div class="toast-body text-white">
-	    </div>
-	  </div>
-    <div id="toastsContainerTopRight" class="toasts-top-right fixed"></div>
-    <!-- Content Header (Page header) -->
-	<?php include 'log.php'; ?>
-    <div class="content-header">
-      <div class="container-fluid">
-          <div class="col-sm-6">
-            <h1 class="m-0">Track Air Cargo Shipment</h1>
-          </div><!-- /.col -->
-
-        </div><!-- /.row -->
-            <hr class="border-primary">
-      <!-- /.container-fluid -->
-    </div>
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-         <div class="col-lg-12">
-	<div class="card card-outline card-primary">
-		<div class="card-body">
-			<div class="d-flex w-100 px-1 py-2 justify-content-center align-items-center">
-				<label for="">Enter Tracking Number</label>
-				<div class="input-group col-sm-5">
-                    <input type="search" id="ref_no" class="form-control form-control-sm" placeholder="Type the tracking number here">
-                    <div class="input-group-append">
-                        <button type="button" id="track-btn" class="btn btn-sm btn-primary btn-gradient-primary">
-                            <i class="fa fa-search"></i>
-                        </button>
+<style>
+    .carousel-item>img{
+        object-fit:fill !important;
+    }
+    #carouselExampleControls .carousel-inner{
+        height:280px !important;
+    }
+    .mob-img{
+        width:100%;
+        max-height:20vh;
+        object-fit:scale-down;
+        object-position:center center;
+    }
+</style>
+<?php
+extract($_GET);
+$qry = $conn->query("SELECT * from `shipment` where id = '{$id}' ");
+if($qry->num_rows > 0){
+    foreach($qry->fetch_assoc() as $k => $v){
+        $$k=$v;
+    }
+}
+?>
+<section class="py-0">
+    <div class="container">
+        <div class="col-lg-12 py-2">
+            <div class="container px-4 px-lg-5 mt-5">
+               <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                        <?php if(isset($id)): ?>
+                        <h4><span class="text-muted">Shipment Ref. Code:</span> <b><?= isset($id) ? $id : "" ?></b></h4>
+                        <div id="history" class="border-left border-3 pl-3">
+                            <?php 
+                            $tracks = $conn->query("SELECT * FROM `tracking_list` where shipment_id = '{$id}' order by unix_timestamp(date_added) desc");
+                            while($row = $tracks->fetch_assoc()):
+                            ?>
+                            <div class="card card-default shadow rounded-0">
+                                <div class="card-header py-1">
+                                    <h5 class="card-title"><b><?= $row['title'] ?></b></h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text"><?= $row['description'] ?></div>
+                                    <div class="clear-fix"></div>
+                                    <div class="text-right"><small class="text-muted"><em><?= date("F d, Y h:i A", strtotime($row['date_added'])) ?></em></small></div>
+                                </div>
+                            </div>
+                            <?php endwhile; ?>
+                        </div>
+                        <?php else: ?>
+                            <h4 class="text-ceter"><em>Unkown Cargo/Shipment Reference Code</em></h4>
+                        <?php endif; ?>
                     </div>
-                </div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-8 offset-md-2">
-			<div class="timeline" id="parcel_history">
-				
-			</div>
-		</div>
-	</div>
-</div>
-<div id="clone_timeline-item" class="d-none">
-	<div class="iitem">
-	    <i class="fas fa-box bg-blue"></i>
-	    <div class="timeline-item">
-	      <span class="time"><i class="fas fa-clock"></i> <span class="dtime">12:05</span></span>
-	      <div class="timeline-body">
-	      	asdasd
-	      </div>
-	    </div>
-	  </div>
-</div>
-<script>
-	function track_now(){
-		start_load()
-		var tracking_num = $('#ref_no').val()
-		if(tracking_num == ''){
-			$('#parcel_history').html('')
-			end_load()
-		}else{
-			$.ajax({
-				url:'ajax.php?action=get_parcel_heistory',
-				method:'POST',
-				data:{ref_no:tracking_num},
-				error:err=>{
-					console.log(err)
-					alert_toast("An error occured",'error')
-					end_load()
-				},
-				success:function(resp){
-					if(typeof resp === 'object' || Array.isArray(resp) || typeof JSON.parse(resp) === 'object'){
-						resp = JSON.parse(resp)
-						if(Object.keys(resp).length > 0){
-							$('#parcel_history').html('')
-							Object.keys(resp).map(function(k){
-								var tl = $('#clone_timeline-item .iitem').clone()
-								tl.find('.dtime').text(resp[k].date_created)
-								tl.find('.timeline-body').text(resp[k].status)
-								$('#parcel_history').append(tl)
-							})
-						}
-					}else if(resp == 2){
-						alert_toast('Unkown Tracking Number.',"error")
-					}
-				}
-				,complete:function(){
-					end_load()
-				}
-			})
-		}
-	}
-	$('#track-btn').click(function(){
-		track_now()
-	})
-	$('#ref_no').on('search',function(){
-		track_now()
-	})
-</script>      </div><!--/. container-fluid -->
-    </section>
-  
-<!-- REQUIRED SCRIPTS -->
-<!-- jQuery -->
-<!-- Bootstrap -->
-<!-- SweetAlert2 -->
-<script src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
-<!-- Toastr -->
-<script src="assets/plugins/toastr/toastr.min.js"></script>
-<!-- Switch Toggle -->
-<script src="assets/plugins/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
-<!-- Select2 -->
-<script src="assets/plugins/select2/js/select2.full.min.js"></script>
-<!-- Summernote -->
-<script src="assets/plugins/summernote/summernote-bs4.min.js"></script>
-<!-- dropzonejs -->
-<script src="assets/plugins/dropzone/min/dropzone.min.js"></script>
-<script src="assets/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-<!-- DateTimePicker -->
-  <script src="assets/dist/js/jquery.datetimepicker.full.min.js"></script>
-  <!-- Bootstrap Switch -->
-<script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-<script>
-	$(document).ready(function(){
-	  $('.select2').select2({
-	    placeholder:"Please select here",
-	    width: "100%"
-	  });
-  })
-	 window.start_load = function(){
-	    $('body').prepend('<div id="preloader2"></div>')
-	  }
-	  window.end_load = function(){
-	    $('#preloader2').fadeOut('fast', function() {
-	        $(this).remove();
-	      })
-	  }
-	 window.viewer_modal = function($src = ''){
-	    start_load()
-	    var t = $src.split('.')
-	    t = t[1]
-	    if(t =='mp4'){
-	      var view = $("<video src='"+$src+"' controls autoplay></video>")
-	    }else{
-	      var view = $("<img src='"+$src+"' />")
-	    }
-	    $('#viewer_modal .modal-content video,#viewer_modal .modal-content img').remove()
-	    $('#viewer_modal .modal-content').append(view)
-	    $('#viewer_modal').modal({
-	            show:true,
-	            backdrop:'static',
-	            keyboard:false,
-	            focus:true
-	          })
-	          end_load()  
+               </div>
 
-	}
-	  window.uni_modal = function($title = '' , $url='',$size=""){
-	      start_load()
-	      $.ajax({
-	          url:$url,
-	          error:err=>{
-	              console.log()
-	              alert("An error occured")
-	          },
-	          success:function(resp){
-	              if(resp){
-	                  $('#uni_modal .modal-title').html($title)
-	                  $('#uni_modal .modal-body').html(resp)
-	                  if($size != ''){
-	                      $('#uni_modal .modal-dialog').addClass($size)
-	                  }else{
-	                      $('#uni_modal .modal-dialog').removeAttr("class").addClass("modal-dialog modal-md")
-	                  }
-	                  $('#uni_modal').modal({
-	                    show:true,
-	                    backdrop:'static',
-	                    keyboard:false,
-	                    focus:true
-	                  })
-	                  end_load()
-	              }
-	          }
-	      })
-	  }
-	  window._conf = function($msg='',$func='',$params = []){
-	     $('#confirm_modal #confirm').attr('onclick',$func+"("+$params.join(',')+")")
-	     $('#confirm_modal .modal-body').html($msg)
-	     $('#confirm_modal').modal('show')
-	  }
-	   window.alert_toast= function($msg = 'TEST',$bg = 'success' ,$pos=''){
-	   	 var Toast = Swal.mixin({
-	      toast: true,
-	      position: $pos || 'top-end',
-	      showConfirmButton: false,
-	      timer: 5000
-	    });
-	      Toast.fire({
-	        icon: $bg,
-	        title: $msg
-	      })
-	  }
-$(function () {
-  bsCustomFileInput.init();
-
-    $('.summernote').summernote({
-        height: 300,
-        toolbar: [
-            [ 'style', [ 'style' ] ],
-            [ 'font', [ 'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear'] ],
-            [ 'fontname', [ 'fontname' ] ],
-            [ 'fontsize', [ 'fontsize' ] ],
-            [ 'color', [ 'color' ] ],
-            [ 'para', [ 'ol', 'ul', 'paragraph', 'height' ] ],
-            [ 'table', [ 'table' ] ],
-            [ 'view', [ 'undo', 'redo', 'fullscreen', 'codeview', 'help' ] ]
-        ]
-    })
-
-     $('.datetimepicker').datetimepicker({
-		  format:'Y/m/d H:i',
-		})
-    
-
-  })
- $(".switch-toggle").bootstrapToggle();
-$('.number').on('input keyup keypress',function(){
-        var val = $(this).val()
-        val = val.replace(/[^0-9]/, '');
-        val = val.replace(/,/g, '');
-        val = val > 0 ? parseFloat(val).toLocaleString("en-US") : 0;
-        $(this).val(val)
-    })
-</script>
-<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="assets/dist/js/adminlte.js"></script>
-
-<!-- PAGE assets/plugins -->
-<!-- jQuery Mapael -->
-<script src="assets/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-<script src="assets/plugins/raphael/raphael.min.js"></script>
-<script src="assets/plugins/jquery-mapael/jquery.mapael.min.js"></script>
-<script src="assets/plugins/jquery-mapael/maps/usa_states.min.js"></script>
-<!-- ChartJS -->
-<script src="assets/plugins/chart.js/Chart.min.js"></script>
-
-<!-- AdminLTE for demo purposes -->
-<script src="assets/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="assets/dist/js/pages/dashboard2.js"></script>
-<!-- DataTables  & Plugins -->
-<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="assets/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="assets/plugins/jszip/jszip.min.js"></script>
-<script src="assets/plugins/pdfmake/pdfmake.min.js"></script>
-<script src="assets/plugins/pdfmake/vfs_fonts.js"></script>
-<script src="assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-
-
-
-</body></html>
+            </div>
+    </div>
+    </div>
+</section>

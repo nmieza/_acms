@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: wH_index.php");
+		header("Location: wh_index.php");
 	} else {
 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
 	}
@@ -35,11 +35,12 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style_.css">
+	<link rel="stylesheet" type="text/css" href="style_log.css">
 
 	<title>WAREHOUSE LOGIN</title>
 </head>
 <body>
+	
 	<div class="container">
 		<form action="" method="POST" class="login-email">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Warehouse</p>

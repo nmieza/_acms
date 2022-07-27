@@ -1,65 +1,41 @@
-<?php
-error_reporting(0);
-session_start();
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIR CARGO MANAGEMENT SYSTEM</title>
-    <body class="hold-transition login-page">
-    <style>
-
-    html{
-    height: 100%;
-}
- body {
-    margin: 0;
-    padding:0;
-
-}
-
-.topnav {
-position: relative;
-  display: flex;
-  align-items: center;
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   background-color: rgb(0, 128, 255);
 }
 
-.topnav a {
+li {
   float: left;
-  color: #f2f2f2;
+}
+
+li a {
+  display: block;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: blue;
+li a:hover {
+  background-color: #111;
 }
-
-.topnav a.active {
-  background-color: #bdedff;
-  color: white;
-}
-
 </style>
 </head>
 <body>
-<div class="topnav">
-  
-  <a href="wh_index.php">AIR CARGO MANAGEMENT SYSTEM</a>
-  <a href="wh_index.php">Home</a>
-  <a href="#">Add Shipment</a>
-  <a href="#">Shipment List</a>
+
+<ul>
+  <li><a class="active" href="wh_index.php">AIR CARGO MANAGEMENT SYSTEM</a></li>
+  <li><a href="wh_index.php">Home</a></li>
+  <li><a href="AddNewShipment.php">New Shipment</a></li>
+  <li><a href="Shipment_List.php">Shipment List</a></li>
   <li><a href="logout.php" target="_self">Log out</a></li>
-</div>
+</ul>
 
 </body>
 </html>
