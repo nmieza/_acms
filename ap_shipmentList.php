@@ -118,7 +118,7 @@ h2 {text-align: center;}
       <script type="text/javascript">  
       function status_update(value,id){  
            //alert(id);  
-           let url = "http://localhost/acms_-main/ap_shipmentList.php";  
+           let url = "http://localhost/_acms/ap_shipmentList.php";  
            window.location.href= url+"?id="+id+"&status="+value;  
       }  
  </script>  
