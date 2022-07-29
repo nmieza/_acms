@@ -43,7 +43,7 @@ li a:hover {
 <ul>
   <li><a class="active" href="index.php">AIR CARGO MANAGEMENT SYSTEM</a></li>
   <li><a href="index.php">Home</a></li>
-  <li><a href="trace_form.php">Trace Shipment</a></li>
+  <li><a href="tracking.php">Trace Shipment</a></li>
   <li><a href="about.html">About</a></li>
 </ul>
 
